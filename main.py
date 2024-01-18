@@ -68,7 +68,7 @@ def rodar_o_jogo():
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 fim_jogo = True
-            elif evento.pyte == pygame.KEYDOWN:
+            elif evento.type == pygame.KEYDOWN:
                 velocidade_x = selecionar_velocidade(evento.key)
                 velocidade_y = selecionar_velocidade(evento.key)
 
